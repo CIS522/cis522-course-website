@@ -1,0 +1,46 @@
+.banner {
+    display: block;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(../img/graph.jpg);
+    background-size: 105%;
+    width: 100%;
+	display: inline-block;
+    text-align: center;
+    padding:0;
+    font-size: 5vw;
+    text-align: center;
+    height: 20vw;
+	line-height: 20vw;
+    color: white;
+}
+
+.banner:after{
+	content: "";
+	display: block;
+	height: 142px; 
+}
+
+.course-info {
+    display: block;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20px;
+}
+
+body {
+    height:100%;
+    margin: 0;
+    font-family: 'Assistant', sans-serif;
+}
+
+p, li {
+    font-size: 16px;
+}
+
+li {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+h1 {
+    padding-top: 3px;
+}
