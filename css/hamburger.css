@@ -40,7 +40,7 @@ By @betoayesa.
 	.hamburger 	span {
 		display: block;
 		height: 3px;
-		background: #000;
+		background: #fff;
 		margin: 0 0 3px;
 	}
 	.hamburger:hover {
