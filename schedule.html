@@ -13,21 +13,9 @@
     <meta name="author" content="Author">
     <title>CIS 522 - UPenn</title>
     <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/reset.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/site.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/container.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/grid.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/header.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/image.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/menu.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/divider.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/list.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/segment.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/message.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/table.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" type="text/css" media="all">
+    
+    <link rel="stylesheet" href="css/hamburger.css" />
     <link rel="stylesheet" href="css/stylesheet.css" />
     <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/132ba586d8.js"></script>
@@ -35,13 +23,18 @@
 
 <body>
 
-    <div class="ui fixed inverted menu">
+    <div class="ui fixed pointing inverted menu stackable">
         <div class="ui container">
             <a href="index.html" class="header item">CIS 522 - Deep Learning</a>
             <a href="syllabus.html" class="item">Syllabus</a>
             <a href="schedule.html" class="item">Schedule</a>
             <a href="homework.html" class="item">Homework</a>
             <a href="staff.html" class="item">Staff</a>
+            <div class="hamburger ">
+                <span class="hamburger-bun"></span>
+                <span class="hamburger-patty"></span>
+                <span class="hamburger-bun"></span>
+            </div>
 
         </div>
     </div>
@@ -65,6 +58,9 @@
             </tbody>
         </table>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" type="text/css" media="all">
+    <script src="js/hamburger.js"></script>
 </body>
 
 </html>
