@@ -24,6 +24,10 @@
     margin-top: 20px;
 }
 
+.image {
+    padding-bottom: 5px;
+}
+
 body {
     height:100%;
     margin: 0;
