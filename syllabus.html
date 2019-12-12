@@ -2,4 +2,104 @@
 layout: default
 title: Syllabus
 ---
-<p>To be added.</p>
+
+<h1>Course Description</h1>
+
+<p>Deep learning techniques now touch on data systems of all varieties. 
+    Sometimes, deep learning is a product; sometimes, deep learning optimizes a pipeline; 
+    sometimes, deep learning provides critical insights; sometimes, deep learning sheds light on neuroscience. 
+    The purpose of this course is to deconstruct the hype by teaching deep learning theories, models, and skills that are useful for applications. 
+    The class will focus on the following 5 questions.</p>
+
+<h3><i>How do we decide which problems to tackle with deep learning?</i></h3>
+<p>Not every problem should be tackled with deep learning. 
+    It’s data-hungry, catastrophically forgets, extrapolates poorly, cannot easily perform estimates of uncertainty, 
+    cannot easily transfer knowledge, and cannot be audited. 
+    Deep learning has been wildly successful in certain domains (CV, NLP, and RL come to mind), 
+    and students will understand how to determine what kinds of models are best for which problem settings.</p>
+
+<h3><i>Given a problem setting, how do we determine what model is best?</i></h3>
+<p>Suppose a problem has variable-length input. There are a range of popular ways to deal with such problems: 
+    truncation, padding, aggregated convolution, and recurrence. For any given problem, 
+    some approaches are preferable. We will cover popular models, 
+    discuss how to find interesting niche research, and gain intuition for the best approaches.</p>
+
+<h3><i>What’s the best way to implement said model?</i></h3>
+<p>The course begins with the mechanics of modern deep learning frameworks and autograd systems. 
+    Students will build on this knowledge by implementing widely-used models, cutting-edge research, 
+    and an open project of their choosing on a unique dataset. 
+    We will also cover interesting research on how to design deep learning systems 
+    (e.g. choosing the depth and the number of hidden neurons). </p>
+
+<h3><i>How can we best visualize, explain, and justify our findings?</i></h3>
+<p>The success of a deep learning project often depends on the interpretation and presentation of results. 
+    The course will cover how to choose evaluation criteria, how to determine next steps from the empirical 
+    performance of a model, which visualizations are the most useful and intuitive, 
+    and how to write up applied findings for both technical and non-technical audiences. 
+    Perhaps most importantly, the course will discuss when to use deep learning 
+    rather than simpler models (e.g. SVM, shallow networks). </p>
+
+<h3><i>How can neuroscience inspire deep learning?</i></h3> 
+<p>For many innovations in deep learning research, neuroscience has directly 
+    or indirectly acted as an inspiration. We will thus, along with the material on implementations always teach ideas from neuroscience, 
+    presented compactly, about how DL ideas may relate to biology.</p>
+
+<h1>Prerequisites</h1>
+<p>Must have a background in Machine Learning such as CIS 519 / CIS 520 / ESE 546 or equivalent. 
+    A background in linear algebra, probability and Python is also highly recommended.</p>
+
+<h1>Course Logistics</h1>
+<p>CIS 522 will be held on <b>Tuesdays/Thursdays from 12-1:30pm, in Wu and Chen Auditorium (Levine 101)</b>. 
+    The course consists of five major components:</p>
+
+<table class="ui celled table">
+    <tbody>
+        <tr>
+        <td data-label="Component">Homework Assignments</td>
+        <td data-label="Percentage">40%</td>
+        </tr>
+        <tr>
+            <td data-label="Component">Final Project</td>
+            <td data-label="Percentage">40%</td>
+            </tr>
+        <tr>
+            <td data-label="Component">Exam</td>
+            <td data-label="Percentage">15%</td>
+        </tr>
+        <tr>
+            <td data-label="Component">Lecture / Recitation Attendance</td>
+            <td data-label="Percentage">5%</td>
+        </tr>
+    </tbody>
+</table>
+<h1>Homework Assignments</h1>
+<p>There will be five equally weighted homework assignments in the course. Homework assignments will always be due on Thursday and are approximately bi-weekly:</p>
+<ul>
+    <li><i><u><b>Homework 1</b></u></i>: This is an introductory ML homework to the course that will have students brush up on the knowledge that they’ve gleamed from CIS 519 / 520 / an equivalent ML course. This homework will have students experiment with different classical approaches to classify the IRIS dataset using Scikit Learn and analyze the dataset using Pandas and Numpy. The students will set up all of this on Google Colab, which will be used for the remainder of the course because it allows free usage of a GPU / TPU for computing.</li>
+    <li><i><u><b>Homework 2</b></u></i>: This homework introduces students to deep learning and the benefits gleamed, by comparing the classification accuracies between using a simple deep neural network as opposed to a classical technique (Logistic Regression). Students will be exposed to tools commonly used in deep learning, using PyTorch to implement both Logistic Regression and a Feed Forward Neural Network as well as tensorboard to visualize the training in progress. Students will then be tasked to debug 7 different neural networks provided to them in pickled format, to build an intuition for different training failure modes as well as procedures for correcting them.</li>
+    <li><i><u><b>Homework 3</b></u></i>: Homework 3 provides a challenging introduction to deep learning in computer vision. Students will work in groups of (2) to implement a Convolutional Neural Network for classification, comparing this to the simple Feed Forward Network / Logistic Regression approaches in the previous homework. Students will then use transfer learning using a pretrained ResNet model to boost classification accuracy significantly. Finally, students will explore generative approaches, creating a CVAE, VAE and GAN to generate new, realistic images that have never existed before.</li>
+    <li><i><u><b>Homework 4</b></u></i>: Students work with the Reddit Sarcasm Dataset to detect sarcasm on Reddit. Students will create a word embedding while varying encoding, featurization and network model to classify whether reddit excerpts exhibit sarcasm.
+    <li><i><u><b>Homework 5</b></u></i>: Students explore the power of reinforcement learning in an interactive way, using Deep Q-Learning to develop an agent that can successfully play a game/control an environment (game to be determined) in an OpenAI Gym environment.  Students will be able to, as the agent progresses, visualize the learnt policy, applying it to the given environment to solve the problem and also look at achieved rewards corresponding to the learnt policy.</li>
+</ul>
+<h1>Final Project</h1>
+<p>Each student will deeply explore a domain and topic in deep learning of their choice (for instance GANs in Computer Vision, Transformers in NLP, etc) and draft an abstract for their proposed project idea. Students will then be paired in groups of (3) based on similar domain / topic interest and work for the remainder of the semester to implement a range of models in the topic, comparing the neural and non-neural approaches’ respective efficacies. More details on this will be added soon.</p>
+<h1>Exam</h1>
+<p>On completion of the core course material (Introduction to Deep Learning, Computer Vision, Natural Language Processing, and Reinforcement Learning), there will be a cumulative exam testing all the material presented thus far in the course. The exam is meant to allow students to obtain a firm grasp of the material presented in the class, but not as to be a source of major stress for the students, thus only weighted 15% of the overall class. This exam will be likely held in early April / late March.</p>
+<h1>Lecture Attendance</h1>
+<p>Lecture attendance is mandatory for students in the course. This is imperative to facilitate effective discussion and absorption of the presented material. As such, attendance will be taken via PollEverywhere every lecture at multiple times throughout the lecture to not only account for attendance, but also as a way to interactively engage in the material and inform us as instructors as to what concepts need further elaboration. The lecture polls are not graded on correctness but solely on completion.</p>
+<h1>Recitation Attendance</h1>
+<p>Every Friday there will be a mandatory recitation held by the TAs where the TAs will review the material presented in class as well as provide helpful tips with regards to implementation / debugging of the models presented. Recitation attendance will be graded based on attendance. This will be a great way to refresh students on the material in the course.
+
+<h1>Office Hours</h1>
+<p>There will be 14 2-hour office hour slots staffed by 2 TA's at a time, concentrated near the homework deadlines. In office hours we will provide with help regarding elucidating the material presented in lecture / recitation as well as provide debugging help with the various assignments. TAs <b>will not</b> provide code, but will help you debug your existing code (debugging neural networks is challenging so please come if you are stuck!)</p>
+
+<h1>Collaboration Policy</h1>
+<p>Collaboration is allowed to the following extent in the course:</p>
+<ul>
+    <li>For <b>group assignments / the final project</b>, students are permitted to view each other’s code, help each other debug, and view each other’s LaTeX.</li>
+    <li>For <b>individual assignments</b> students are not permitted to view each other’s code, help each other debug or view each other’s LaTeX. Students may, however, discuss the concepts, questions and assignment at a high level amongst each other, however, all LaTeX must be done individually as must all code.</li>
+    <li>For <b>both group and individual assignments</b> students may use the internet for debugging help (i.e. stack overflow), read medium (and similar) articles to gleam further understanding of the material presented, and of course official documentation (i.e. for PyTorch, NumPy, Pandas, etc.). <b>However, copying of code from the internet is strictly forbidden, all code submitted must be an individuals' own work.</b> We will be running all code you submit against <a href="https://theory.stanford.edu/~aiken/moss/">MOSS</a>.</li>
+</ul>
+
+<p><b>Any student caught in violation of the collaboration policy above will be reported to the Office of Student Conduct (OSC) as well as given a 0 for that assignment / project. If a student copied from another student, that other student will also be reported to OSC and given a 0 on the homework. Please do not cheat, you are only hurting yourself!</b></p>
+<br/>
